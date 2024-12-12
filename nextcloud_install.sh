@@ -31,7 +31,7 @@ sudo chown -R www-data:www-data ${NEXTCLOUD_DIR}
 echo "Configuring Apache..."
 NEXTCLOUD_CONF="/etc/apache2/sites-available/nextcloud.conf"
 echo "<VirtualHost *:80>
-    ServerName ${DOMAIN_OR_IP}
+    ServerName localhost:80
     DocumentRoot ${NEXTCLOUD_DIR}
     <Directory ${NEXTCLOUD_DIR}/>
         Require all granted
