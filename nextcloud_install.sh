@@ -22,7 +22,8 @@ sudo a2enmod rewrite headers env dir mime
 echo "Installing Nextcloud..."
 sudo mkdir -p ${NEXTCLOUD_DIR}
 cd ${NEXTCLOUD_DIR}/..
-sudo wget https://download.nextcloud.com/server/releases/latest.tar.bz2
+# php7.4 supports most to nextcloud-25
+sudo wget https://download.nextcloud.com/server/releases/latest-25.tar.bz2 -O latest.tar.bz2
 sudo tar -xjf latest.tar.bz2 -C ${NEXTCLOUD_DIR} --strip-components=1
 sudo rm latest.tar.bz2
 sudo chown -R www-data:www-data ${NEXTCLOUD_DIR}
