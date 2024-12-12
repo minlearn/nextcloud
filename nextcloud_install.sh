@@ -10,7 +10,7 @@ NEXTCLOUD_DIR=/var/www/nextcloud
 
 # Install Apache, PHP, and necessary PHP extensions
 echo "Installing Apache and PHP..."
-sudo apt install apache2 libapache2-mod-php php-gd php-json php-sqlite3 php-curl php-mbstring \
+sudo apt install apache2 libapache2-mod-php php-gd php-json php-sqlite3 php-mysql php-curl php-mbstring \
                  php-intl php-imagick php-xml php-zip -y
 
 # Enable Apache mods
